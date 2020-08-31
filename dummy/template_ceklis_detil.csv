@@ -1,0 +1,157 @@
+id_template_ceklis;tipe_ceklis;tipe_input;kelompok;pertanyaan;required
+1;SUHU;NUMBER;Kondisi Ruangan;Suhu ruangan;TRUE
+1;OTHER;PHOTO;Kondisi Ruangan;Foto Thermometer;TRUE
+1;OTHER;OPTION_OK_NOK;Kondisi Ruangan;Kebersihan;TRUE
+1;OTHER;PHOTO;Kondisi Ruangan;Foto Ruangan;TRUE
+1;OTHER;PHOTO;Baterai;Foto level air;TRUE
+1;OTHER;OPTION_OK_NOK;Rectifier;Tidak ada alarm;TRUE
+1;OTHER;PHOTO;Rectifier;Foto Rectifier;TRUE
+1;OTHER;OPTION_OK_NOK;Genset;Kondisi;TRUE
+1;BBM;NUMBER;Genset;BBM Tangki Harian;TRUE
+1;BBM;NUMBER;Genset;BBM Tangki Bulanan;TRUE
+1;OTHER;OPTION_OK_NOK;PLN;Kondisi;TRUE
+1;OTHER;NUMBER;PLN;Lama mati listrik;TRUE
+1;OTHER;PHOTO;PLN;Foto Voltmeter;TRUE
+2;SUHU;NUMBER;Kondisi Ruangan;Suhu ruangan;TRUE
+2;OTHER;PHOTO;Kondisi Ruangan;Foto Thermometer;TRUE
+2;OTHER;OPTION_OK_NOK;Kondisi Ruangan;Kebersihan;TRUE
+2;OTHER;PHOTO;Kondisi Ruangan;Foto Ruangan;TRUE
+2;OTHER;PHOTO;Baterai;Foto level air;TRUE
+2;OTHER;OPTION_OK_NOK;Rectifier;Tidak ada alarm;TRUE
+2;OTHER;PHOTO;Rectifier;Foto Rectifier;TRUE
+2;OTHER;OPTION_OK_NOK;Genset;Kondisi;TRUE
+2;BBM;NUMBER;Genset;BBM Tangki Harian;TRUE
+2;BBM;NUMBER;Genset;BBM Tangki Bulanan;TRUE
+2;OTHER;OPTION_OK_NOK;PLN;Kondisi;TRUE
+2;OTHER;NUMBER;PLN;Lama mati listrik;TRUE
+2;OTHER;PHOTO;PLN;Foto Voltmeter;TRUE
+3;SUHU;NUMBER;Kondisi Ruangan;Suhu ruangan;TRUE
+3;OTHER;PHOTO;Kondisi Ruangan;Foto Thermometer;TRUE
+3;OTHER;OPTION_OK_NOK;Kondisi Ruangan;Kebersihan;TRUE
+3;OTHER;PHOTO;Kondisi Ruangan;Foto Ruangan;TRUE
+3;OTHER;PHOTO;Baterai;Foto level air;TRUE
+3;OTHER;OPTION_OK_NOK;Rectifier;Tidak ada alarm;TRUE
+3;OTHER;PHOTO;Rectifier;Foto Rectifier;TRUE
+3;OTHER;OPTION_OK_NOK;Genset;Kondisi;TRUE
+3;BBM;NUMBER;Genset;BBM Tangki Harian;TRUE
+3;BBM;NUMBER;Genset;BBM Tangki Bulanan;TRUE
+3;OTHER;OPTION_OK_NOK;PLN;Kondisi;TRUE
+3;OTHER;NUMBER;PLN;Lama mati listrik;TRUE
+3;OTHER;PHOTO;PLN;Foto Voltmeter;TRUE
+4;SUHU;NUMBER;Kondisi Ruangan;Suhu ruangan;TRUE
+4;OTHER;PHOTO;Kondisi Ruangan;Foto Thermometer;TRUE
+4;OTHER;OPTION_OK_NOK;Kondisi Ruangan;Kebersihan;TRUE
+4;OTHER;PHOTO;Kondisi Ruangan;Foto Ruangan;TRUE
+4;OTHER;PHOTO;Baterai;Foto level air;TRUE
+4;OTHER;OPTION_OK_NOK;Rectifier;Tidak ada alarm;TRUE
+4;OTHER;PHOTO;Rectifier;Foto Rectifier;TRUE
+4;OTHER;OPTION_OK_NOK;Genset;Kondisi;TRUE
+4;BBM;NUMBER;Genset;BBM Tangki Harian;TRUE
+4;BBM;NUMBER;Genset;BBM Tangki Bulanan;TRUE
+4;OTHER;OPTION_OK_NOK;PLN;Kondisi;TRUE
+4;OTHER;NUMBER;PLN;Lama mati listrik;TRUE
+4;OTHER;PHOTO;PLN;Foto Voltmeter;TRUE
+5;SUHU;NUMBER;Kondisi Ruangan;Suhu ruangan;TRUE
+5;OTHER;PHOTO;Kondisi Ruangan;Foto Thermometer;TRUE
+5;OTHER;OPTION_OK_NOK;Kondisi Ruangan;Kebersihan;TRUE
+5;OTHER;PHOTO;Kondisi Ruangan;Foto Ruangan;TRUE
+5;OTHER;PHOTO;Baterai;Foto level air;TRUE
+5;OTHER;OPTION_OK_NOK;Rectifier;Tidak ada alarm;TRUE
+5;OTHER;PHOTO;Rectifier;Foto Rectifier;TRUE
+5;OTHER;OPTION_OK_NOK;Genset;Kondisi;TRUE
+5;BBM;NUMBER;Genset;BBM Tangki Harian;TRUE
+5;BBM;NUMBER;Genset;BBM Tangki Bulanan;TRUE
+5;OTHER;OPTION_OK_NOK;PLN;Kondisi;TRUE
+5;OTHER;NUMBER;PLN;Lama mati listrik;TRUE
+5;OTHER;PHOTO;PLN;Foto Voltmeter;TRUE
+6;SUHU;NUMBER;Kondisi Ruangan;Suhu ruangan;TRUE
+6;OTHER;PHOTO;Kondisi Ruangan;Foto Thermometer;TRUE
+6;OTHER;OPTION_OK_NOK;Kondisi Ruangan;Kebersihan;TRUE
+6;OTHER;PHOTO;Kondisi Ruangan;Foto Ruangan;TRUE
+6;OTHER;PHOTO;Baterai;Foto level air;TRUE
+6;OTHER;OPTION_OK_NOK;Rectifier;Tidak ada alarm;TRUE
+6;OTHER;PHOTO;Rectifier;Foto Rectifier;TRUE
+6;OTHER;OPTION_OK_NOK;Genset;Kondisi;TRUE
+6;BBM;NUMBER;Genset;BBM Tangki Harian;TRUE
+6;BBM;NUMBER;Genset;BBM Tangki Bulanan;TRUE
+6;OTHER;OPTION_OK_NOK;PLN;Kondisi;TRUE
+6;OTHER;NUMBER;PLN;Lama mati listrik;TRUE
+6;OTHER;PHOTO;PLN;Foto Voltmeter;TRUE
+7;SUHU;NUMBER;Kondisi Ruangan;Suhu ruangan;TRUE
+7;OTHER;PHOTO;Kondisi Ruangan;Foto Thermometer;TRUE
+7;OTHER;OPTION_OK_NOK;Kondisi Ruangan;Kebersihan;TRUE
+7;OTHER;PHOTO;Kondisi Ruangan;Foto Ruangan;TRUE
+7;OTHER;PHOTO;Baterai;Foto level air;TRUE
+7;OTHER;OPTION_OK_NOK;Rectifier;Tidak ada alarm;TRUE
+7;OTHER;PHOTO;Rectifier;Foto Rectifier;TRUE
+7;OTHER;OPTION_OK_NOK;Genset;Kondisi;TRUE
+7;BBM;NUMBER;Genset;BBM Tangki Harian;TRUE
+7;BBM;NUMBER;Genset;BBM Tangki Bulanan;TRUE
+7;OTHER;OPTION_OK_NOK;PLN;Kondisi;TRUE
+7;OTHER;NUMBER;PLN;Lama mati listrik;TRUE
+7;OTHER;PHOTO;PLN;Foto Voltmeter;TRUE
+8;SUHU;NUMBER;Kondisi Ruangan;Suhu ruangan;TRUE
+8;OTHER;PHOTO;Kondisi Ruangan;Foto Thermometer;TRUE
+8;OTHER;OPTION_OK_NOK;Kondisi Ruangan;Kebersihan;TRUE
+8;OTHER;PHOTO;Kondisi Ruangan;Foto Ruangan;TRUE
+8;OTHER;PHOTO;Baterai;Foto level air;TRUE
+8;OTHER;OPTION_OK_NOK;Rectifier;Tidak ada alarm;TRUE
+8;OTHER;PHOTO;Rectifier;Foto Rectifier;TRUE
+8;OTHER;OPTION_OK_NOK;Genset;Kondisi;TRUE
+8;BBM;NUMBER;Genset;BBM Tangki Harian;TRUE
+8;BBM;NUMBER;Genset;BBM Tangki Bulanan;TRUE
+8;OTHER;OPTION_OK_NOK;PLN;Kondisi;TRUE
+8;OTHER;NUMBER;PLN;Lama mati listrik;TRUE
+8;OTHER;PHOTO;PLN;Foto Voltmeter;TRUE
+9;SUHU;NUMBER;Kondisi Ruangan;Suhu ruangan;TRUE
+9;OTHER;PHOTO;Kondisi Ruangan;Foto Thermometer;TRUE
+9;OTHER;OPTION_OK_NOK;Kondisi Ruangan;Kebersihan;TRUE
+9;OTHER;PHOTO;Kondisi Ruangan;Foto Ruangan;TRUE
+9;OTHER;PHOTO;Baterai;Foto level air;TRUE
+9;OTHER;OPTION_OK_NOK;Rectifier;Tidak ada alarm;TRUE
+9;OTHER;PHOTO;Rectifier;Foto Rectifier;TRUE
+9;OTHER;OPTION_OK_NOK;Genset;Kondisi;TRUE
+9;BBM;NUMBER;Genset;BBM Tangki Harian;TRUE
+9;BBM;NUMBER;Genset;BBM Tangki Bulanan;TRUE
+9;OTHER;OPTION_OK_NOK;PLN;Kondisi;TRUE
+9;OTHER;NUMBER;PLN;Lama mati listrik;TRUE
+9;OTHER;PHOTO;PLN;Foto Voltmeter;TRUE
+10;SUHU;NUMBER;Kondisi Ruangan;Suhu ruangan;TRUE
+10;OTHER;PHOTO;Kondisi Ruangan;Foto Thermometer;TRUE
+10;OTHER;OPTION_OK_NOK;Kondisi Ruangan;Kebersihan;TRUE
+10;OTHER;PHOTO;Kondisi Ruangan;Foto Ruangan;TRUE
+10;OTHER;PHOTO;Baterai;Foto level air;TRUE
+10;OTHER;OPTION_OK_NOK;Rectifier;Tidak ada alarm;TRUE
+10;OTHER;PHOTO;Rectifier;Foto Rectifier;TRUE
+10;OTHER;OPTION_OK_NOK;Genset;Kondisi;TRUE
+10;BBM;NUMBER;Genset;BBM Tangki Harian;TRUE
+10;BBM;NUMBER;Genset;BBM Tangki Bulanan;TRUE
+10;OTHER;OPTION_OK_NOK;PLN;Kondisi;TRUE
+10;OTHER;NUMBER;PLN;Lama mati listrik;TRUE
+10;OTHER;PHOTO;PLN;Foto Voltmeter;TRUE
+11;SUHU;NUMBER;Kondisi Ruangan;Suhu ruangan;TRUE
+11;OTHER;PHOTO;Kondisi Ruangan;Foto Thermometer;TRUE
+11;OTHER;OPTION_OK_NOK;Kondisi Ruangan;Kebersihan;TRUE
+11;OTHER;PHOTO;Kondisi Ruangan;Foto Ruangan;TRUE
+11;OTHER;PHOTO;Baterai;Foto level air;TRUE
+11;OTHER;OPTION_OK_NOK;Rectifier;Tidak ada alarm;TRUE
+11;OTHER;PHOTO;Rectifier;Foto Rectifier;TRUE
+11;OTHER;OPTION_OK_NOK;Genset;Kondisi;TRUE
+11;BBM;NUMBER;Genset;BBM Tangki Harian;TRUE
+11;BBM;NUMBER;Genset;BBM Tangki Bulanan;TRUE
+11;OTHER;OPTION_OK_NOK;PLN;Kondisi;TRUE
+11;OTHER;NUMBER;PLN;Lama mati listrik;TRUE
+11;OTHER;PHOTO;PLN;Foto Voltmeter;TRUE
+12;SUHU;NUMBER;Kondisi Ruangan;Suhu ruangan;TRUE
+12;OTHER;PHOTO;Kondisi Ruangan;Foto Thermometer;TRUE
+12;OTHER;OPTION_OK_NOK;Kondisi Ruangan;Kebersihan;TRUE
+12;OTHER;PHOTO;Kondisi Ruangan;Foto Ruangan;TRUE
+12;OTHER;PHOTO;Baterai;Foto level air;TRUE
+12;OTHER;OPTION_OK_NOK;Rectifier;Tidak ada alarm;TRUE
+12;OTHER;PHOTO;Rectifier;Foto Rectifier;TRUE
+12;OTHER;OPTION_OK_NOK;Genset;Kondisi;TRUE
+12;BBM;NUMBER;Genset;BBM Tangki Harian;TRUE
+12;BBM;NUMBER;Genset;BBM Tangki Bulanan;TRUE
+12;OTHER;OPTION_OK_NOK;PLN;Kondisi;TRUE
+12;OTHER;NUMBER;PLN;Lama mati listrik;TRUE
+12;OTHER;PHOTO;PLN;Foto Voltmeter;TRUE

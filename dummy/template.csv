@@ -1,0 +1,49 @@
+nama_ceklis;id_sto;id_jenis_ceklis;jadwal_ceklis;waktu_mulai_ceklis;approval;active_flag
+Ceklis Harian STO Banjarmasin;14;1;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis CME STO Banjarmasin;14;2;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis IP Network STO Banjarmasin;14;3;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis Harian STO Banjarbaru;10;1;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis CME STO Banjarbaru;10;2;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis IP Network STO Banjarbaru;10;3;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis Harian STO Landasan Ulin;12;1;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis CME STO Landasan Ulin;12;2;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis IP Network STO Landasan Ulin;12;3;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis Harian STO Kayutangi;16;1;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis CME STO Kayutangi;16;2;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis IP Network STO Kayutangi;16;3;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis Harian STO Marabahan;11;1;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis CME STO Marabahan;11;2;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis IP Network STO Marabahan;11;3;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis Harian STO Martapura;13;1;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis CME STO Martapura;13;2;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis IP Network STO Martapura;13;3;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis Harian STO Bati Bati;18;1;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis CME STO Bati Bati;18;2;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis IP Network STO Bati Bati;18;3;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis Harian STO Batulicin;19;1;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis CME STO Batulicin;19;2;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis IP Network STO Batulicin;19;3;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis Harian STO Banjarmasin;20;1;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis CME STO Banjarmasin;20;2;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis IP Network STO Banjarmasin;20;3;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis Harian STO Banjarbaru;21;1;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis CME STO Banjarbaru;21;2;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis IP Network STO Banjarbaru;21;3;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis Harian STO Landasan Ulin;22;1;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis CME STO Landasan Ulin;22;2;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis IP Network STO Landasan Ulin;22;3;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis Harian STO Kayutangi;23;1;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis CME STO Kayutangi;23;2;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis IP Network STO Kayutangi;23;3;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis Harian STO Marabahan;24;1;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis CME STO Marabahan;24;2;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis IP Network STO Marabahan;24;3;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis Harian STO Martapura;25;1;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis CME STO Martapura;25;2;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis IP Network STO Martapura;25;3;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis Harian STO Bati Bati;26;1;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis CME STO Bati Bati;26;2;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis IP Network STO Bati Bati;26;3;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis Harian STO Batulicin;27;1;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis CME STO Batulicin;27;2;HARIAN;2019-10-08 08:00:00;1;YES
+Ceklis IP Network STO Batulicin;27;3;HARIAN;2019-10-08 08:00:00;1;YES

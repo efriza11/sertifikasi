@@ -1,0 +1,90 @@
+id_unit;nama;jabatan;username;password;tipe
+12;Administrator;Administrator;admin;admin;PELAKSANA
+12;Ahmad Ari Maka Suci;OSM RNO;730304;730304;WASPANG
+12;Arief Djoko Prihatin;Mgr Backbone & CME Operation;730409;730409;PELAKSANA
+12;Dani Prasetiawan;Mgr IP & Service Node Operation;800052;800052;WASPANG
+12;Khairan Noor;Off 1 Backbone Operation;840039;840039;PELAKSANA
+12;K. Julawatal;Off 1 DC & CME Operation;650603;650603;WASPANG
+12;I Wayan Karyana;Mgr Network Area & IS Operation;670106;670106;PELAKSANA
+12;Gusti Rahmadi;Asman OM Transport;660070;660070;WASPANG
+12;Edyansyah;Asman OM Radio & Mux;641380;641380;PELAKSANA
+12;Arief Rachmani;Off 2 OM Transport;850017;850017;WASPANG
+12;Agustinus;Asman Data Center & CME;660531;660531;PELAKSANA
+12;Firman Fiqri Firdaus;Off 3 OM IP Network;930180;930180;WASPANG
+12;Aulia Azizah;Asman OM IP Network;840014;840014;PELAKSANA
+12;Riswan;Technical Support CME;87598;87598;WASPANG
+12;Dwi Hari Nuryanto;Technical Support CME;87637;87637;PELAKSANA
+12;M. Zain Arimullah;Technical Support IP Network;45003;45003;WASPANG
+12;Gusti Yusuf Habibi;Technical Support IP Network;46757;46757;PELAKSANA
+12;Gusti M. Rizal;Technical Support Transport;44983;44983;WASPANG
+12;Harun Nadi Satria;Technical Support Transport;44998;44998;PELAKSANA
+13;Bakhtiar;Mgr Network Area & IS Operation;700171;700171;WASPANG
+13;Yudhi Suryanto;Asman OM IP Network;870024;870024;PELAKSANA
+13;Marthen Toban;Asman OM Transport;632202;632202;WASPANG
+13;Majidi;Asman Radio & Mux;850028;850028;PELAKSANA
+13;Andi Rakhman;Off 2 OM Transport;860002;860002;WASPANG
+13;Gimin;Off 2 OM CME;633309;633309;PELAKSANA
+13;Indra Bari Yulio;Off 3 OM IP Network;940243;940243;WASPANG
+13;Amianto;Asman OM IP Network;830007;830007;PELAKSANA
+13;Suwandi;Mgr Network Area & IS Operation;622733;622733;WASPANG
+13;Muhammad Noor;Asman OM Radio & Mux;830021;830021;PELAKSANA
+13;Hairani;Asman OM Transport;651504;651504;WASPANG
+13;Soekardji;Asman Data Center & CME;690284;690284;PELAKSANA
+13;Teguh Prananto;Mgr Network Area & IS Operation;690601;690601;WASPANG
+13;Nugraha Basuki;Mgr Network Area & IS Operation;690281;690281;PELAKSANA
+13;Ari Fitri Handoko;Asman OM Transport;860016;860016;WASPANG
+13;Arif Setiawan Irsal;Off 3 OM Transport;910167;910167;PELAKSANA
+13;M Dwi Rifqi;Off 3 OM IP Network;950135;950135;WASPANG
+13;Hamsan;Asman IS Operation Support;631670;631670;PELAKSANA
+13;Parwata;Asman Network Performance QM and Admin;860124;860124;WASPANG
+13;Max Ayub Wangko;Asman OM Radio & Mux;840015;840015;PELAKSANA
+13;Kusnanto;Asman Operation and Maintenance 2;680345;680345;WASPANG
+13;Nanang Kusnadi;Asman OM Transport;633290;633290;PELAKSANA
+13;Ridwan ;Asman Data Center & CME;621038;621038;WASPANG
+13;Priyono;Asman OM IP Network;670002;670002;PELAKSANA
+13;Pangudi;Mgr Network Area & IS Operation;730479;730479;WASPANG
+13;SYARIFUDIN;Mgr Network Area & IS Operation;690280;690280;PELAKSANA
+13;KEMIS SUGIRAN;Asman OM Switching;670337;670337;WASPANG
+13;MISDJONO;Asman OM Radio & Mux;651492;651492;PELAKSANA
+13;SUARDI;Asman IS Operation Support;632195;632195;WASPANG
+13;WAGINO;Asman Data Center & CME;633317;633317;PELAKSANA
+13;S.MARGONO;Asman Network Performance QM and Admin;642413;642413;WASPANG
+14;ARIF KURNIAWAN;Asman OM IP Network;830001;830001;PELAKSANA
+14;AULIA NUGRAHA;Asman OM Transport;860010;860010;WASPANG
+14;EDY;Asman Operation and Maintenance;690306;690306;PELAKSANA
+14;HARYANTO;Asman Operation and Maintenance;641277;641277;WASPANG
+14;SYAIPUL BAHRI;Asman Operation and Maintenance;633294;633294;PELAKSANA
+14;DAMSYIK;Asman Operation and Maintenance;651490;651490;WASPANG
+14;Achmad Suhaimi;Technical Support;71656;71656;PELAKSANA
+14;Mardani Rosadi;Transport;0710019;0710019;WASPANG
+14;Karnoto;Technical Support CME;44913;44913;PELAKSANA
+14;Herizal;Technical Support CME;44922;44922;WASPANG
+14;Rusdiyanto;Technical Support IP;44914;44914;PELAKSANA
+14;Sutrisno;Technical Support IP;44924;44924;WASPANG
+14;Nova Trihartanto;SQUAT-B;novatri;novatri;PELAKSANA
+14;Nico Prasetyo;SQUAT-B;nicopra;nicopra;WASPANG
+14;M Asep Prayana;Technical Support PTK;71646;71646;PELAKSANA
+14;Wahjoe Wijono;Mgr Wholesale;660304;660304;WASPANG
+14;YUDI RAHMANI;ASMAN ADVALJAR OPERATION;840003;840003;PELAKSANA
+14;Arwinda Ardi Priambodo;Technical Support IP Network;65752;65752;WASPANG
+14;Yosef Bambang Susanto;Technical Support IP Network;76739;76739;PELAKSANA
+14;Nicko Wijaya;Technical Support IP Network;65753;65753;WASPANG
+14;Fajar Ramadhani;Technical Support Transport;45050;45050;PELAKSANA
+14;Vardius Aditia Fatahilah;Technical Support Transport;45051;45051;WASPANG
+14;Suwandi;Technical Support Transport;46741;46741;PELAKSANA
+14;Priyo Utomo;Technical Support Transport;45046;45046;WASPANG
+14;Sugiono;Technical Support CME;45049;45049;PELAKSANA
+14;Epan Sudaryanto;Technical Support CME;45045;45045;WASPANG
+14;Gading Edi Sampurno;Technical Support CME;96745;96745;PELAKSANA
+14;MUHAMMAD JAUHARIANSYAH;ASMAN CCAN ASSURANCE;860008;860008;WASPANG
+14;RIO WICAKSONO;OFF 3 SALES;940143;940143;PELAKSANA
+14;Iskandar Zulkarnain;Asman Maintenance & QE;850039;850039;WASPANG
+14;Rifqi Fadhlillah;OM IP Network;930369;930369;PELAKSANA
+14;ROSMA FEBRI DIANDARI;OFF 1 CAPABILITY DEVELOPMENT MANAGEMENT;860132;860132;WASPANG
+14;SATRIA ADI SURYA WIJAYA;JUNIOR ACCOUNT MANAGER 1;910111;910111;PELAKSANA
+14;Mahliadi;SQUAT-B;mahli;mahli;WASPANG
+14;AMA;AMA;ama;ama;PELAKSANA
+14;JAUHAR FATHONI;TKPK CME;44956;44956;WASPANG
+14;Arya Anandita;OFF 3 OM IP Network;920195;920195;PELAKSANA
+14;SUNARDI, ST;MGR WAR ROOM;730552;730552;WASPANG
+14;MUSTADI,ST;GENERAL MANAGER;720370;720370;PELAKSANA
