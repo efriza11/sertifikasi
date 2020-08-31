@@ -251,13 +251,13 @@
 		}else{
 			if(allowedExtensions.exec(filePath)[0]==('.jpg')||allowedExtensions.exec(filePath)[0]==('.png')||allowedExtensions.exec(filePath)[0]==('.jpeg')){
 				if(fileInput.files[0].size > 10 * 1024 * 1024){ //10MB
-			   		Swal.fire("File is too big!");
+			   		Swal.fire("Maksimal 10 MB!");
 				   	fileInput.value = '';
 				   	return false;
 				};
 			}else{
-				if(fileInput.files[0].size > 250 * 1024 * 1024){ //50MB
-			   		Swal.fire("File is too big!");
+				if(fileInput.files[0].size > 100 * 1024 * 1024){ //50MB
+			   		Swal.fire("Maksimal 100 MB!");
 				   	fileInput.value = '';
 				   	return false;
 				};

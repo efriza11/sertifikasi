@@ -54,7 +54,7 @@ class Add_objek_sertifikasi extends CI_Controller {
             if($file['error'] === UPLOAD_ERR_OK){
                 if($file['tmp_name'] != ''){
                   if ($fileType == "mp4" || $fileType == "MP4") { //FILE FORMAT
-                    if($file["size"] <= 262144000 ) { //50MB
+                    if($file["size"] <= 104857600 ) { //100MB
                         $target_dir = "./assets/video_upload/";
                         $target_file = $target_dir . $filename.'.'.$fileType;
                         if(file_exists($target_file)){
