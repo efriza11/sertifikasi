@@ -270,7 +270,6 @@
 		format: "yyyy-mm-dd",
 		todayHighlight: true,
 		todayBtn: "linked",
-		startDate: "now",
 		autoclose: true
     });
 
@@ -280,7 +279,6 @@
 		format: "yyyy-mm-dd",
 		todayHighlight: true,
 		todayBtn: "linked",
-		startDate: "now",
 		autoclose: true
     });
 
