@@ -60,6 +60,7 @@
 							<th>NIK</th>
 							<th>Valid until</th>
 							<th>Kode QR</th>
+							<th>Action</th>
 						</tr>
 					</thead>
 				</table>
@@ -258,6 +259,9 @@
 				},{
 					"data": "action",
 					"className" : "dt-center"
+				},{
+					"data": "delete",
+					"className" : "dt-center"
 				}
 			]
 		});
@@ -348,4 +352,89 @@
 			e.preventDefault();
 		}
 	});
+
+
+	function delete_jenis(kode_qr){
+		var caption = 'Hapus Sertifikasi ?';
+			Swal.fire({
+			title: 'Konfirmasi',
+			text: caption,
+			type: 'warning',
+			showCancelButton: true,
+			confirmButtonColor: '#3085d6',
+			cancelButtonColor: '#d33',
+			confirmButtonText: 'Yes'
+		}).then((result) => {
+			if (result.value) {
+				$.ajax({
+					url: "<?= base_url('home/deleteJenisSertifikasi') ?>",
+					type: "POST",
+					data:  {
+							kode_qr: kode_qr
+							},					
+					dataType: 'json',
+					beforeSend : function(){
+						show_loading();
+					},
+					success: function(json){
+						if(json.status=='OK'){
+							table_jeniis_sertifikasi.ajax.reload();
+							table_objek_sertifikasi.ajax.reload();
+							hide_loading();
+							Swal.fire('Berhasil',json.message,'success');
+						}else{
+							hide_loading();
+							Swal.fire('Gagal',json.message,'error');
+						}
+					},
+					error: function(e){
+						hide_loading();
+						Swal.fire('Oops...','Terjadi kesalahan, hubungi admin.','error');
+					}          
+				});
+			}
+		});
+	}
+
+	function delete_objek(id_objek){
+		var caption = 'Hapus Objek Sertifikasi ?';
+			Swal.fire({
+			title: 'Konfirmasi',
+			text: caption,
+			type: 'warning',
+			showCancelButton: true,
+			confirmButtonColor: '#3085d6',
+			cancelButtonColor: '#d33',
+			confirmButtonText: 'Yes'
+		}).then((result) => {
+			if (result.value) {
+				$.ajax({
+					url: "<?= base_url('home/deleteObjekSertifikasi') ?>",
+					type: "POST",
+					data:  {
+							id_objek: id_objek
+							},					
+					dataType: 'json',
+					beforeSend : function(){
+						show_loading();
+					},
+					success: function(json){
+						if(json.status=='OK'){
+							table_jeniis_sertifikasi.ajax.reload();
+							table_objek_sertifikasi.ajax.reload();
+							hide_loading();
+							Swal.fire('Berhasil',json.message,'success');
+						}else{
+							hide_loading();
+							Swal.fire('Gagal',json.message,'error');
+						}
+					},
+					error: function(e){
+						hide_loading();
+						Swal.fire('Oops...','Terjadi kesalahan, hubungi admin.','error');
+					}          
+				});
+			}
+		});
+	}
 </script>

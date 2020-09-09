@@ -31,7 +31,7 @@ class Home extends CI_Controller {
 		$i=1;
 		foreach($data as $row){
 			$row->no = $start + $i;
-			$row->action = '<a class="btn btn-primary btn-xs" onclick="open_certificate(\''.$row->id_objek.'\')">Lihat Sertifikasi</a>';
+			$row->action = '<a class="btn btn-primary btn-xs" onclick="open_certificate(\''.$row->id_objek.'\')">Lihat Sertifikasi</a> <a class="btn btn-danger btn-xs" onclick="delete_objek(\''.$row->id_objek.'\')"><i class="fa fa-fw fa-trash"></i></a>';
 			$i++;
 		}
 		
@@ -52,6 +52,7 @@ class Home extends CI_Controller {
 		foreach($data as $row){
 			$row->no = $i;
 			$row->action = '<a class="btn btn-primary btn-xs" onclick="show_qr(\''.$row->kode_qr.'\',\''.$row->nama_sertifikasi.'\')">Show QR</a> <a class="btn btn-primary btn-xs" onclick="cetak_sertifikat(\''.$row->kode_qr.'\')">Cetak Sertifikat</a>';
+			$row->delete = '<a class="btn btn-danger btn-xs" onclick="delete_jenis(\''.$row->kode_qr.'\')"><i class="fa fa-fw fa-trash"></i></a>';
 			$i++;
 		}
 		$result["data"] = $data;
@@ -71,6 +72,18 @@ class Home extends CI_Controller {
 		$valid_until = $this->input->post('form_valid_until');
 
 		$result = $this->Home_model->submitJenisSertifikasi($id_objek,$nama_sertifikasi,$nama_certifier,$jabatan_certifier,$nik_certifier,$tgl_sertifikasi,$valid_until);
+		echo json_encode($result);
+	}
+
+	public function deleteJenisSertifikasi(){
+		$kode_qr = $this->input->post('kode_qr');
+		$result = $this->Home_model->deleteJenisSertifikasi($kode_qr);
+		echo json_encode($result);
+	}
+
+	public function deleteObjekSertifikasi(){
+		$id_objek = $this->input->post('id_objek');
+		$result = $this->Home_model->deleteObjekSertifikasi($id_objek);
 		echo json_encode($result);
 	}
 	

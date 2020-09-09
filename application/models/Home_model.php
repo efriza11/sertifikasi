@@ -43,6 +43,29 @@ class Home_model extends CI_Model {
         $query = $this->db->query($select);
         return $query;
     }
+
+    public function deleteJenisSertifikasi($kode_qr){
+		$sql = "DELETE FROM jenis_sertifikasi WHERE kode_qr = '$kode_qr'";
+		$this->db->query($sql);
+		$result['status'] = 'OK';
+		$result['message'] = 'Berhasil Dihapus';
+		return $result;
+	}
+
+	 public function deleteObjekSertifikasi($id_objek){
+	 	$query = "SELECT * FROM jenis_sertifikasi js WHERE js.id_objek_sertifikasi='$id_objek'";
+	 	if($this->db->query($query)->num_rows()==0){
+			$sql = "DELETE FROM objek_sertifikasi WHERE id_objek = '$id_objek'";
+			$this->db->query($sql);
+			$result['status'] = 'OK';
+			$result['message'] = 'Berhasil Dihapus';	
+		}else{
+			$result['status'] = 'error';
+			$result['message'] = 'Masih Terdapat Sertifikasi';	
+		}
+		
+		return $result;
+	}
     
     public function submitJenisSertifikasi($id_objek,$nama_sertifikasi,$nama_certifier,$jabatan_certifier,$nik_certifier,$tgl_sertifikasi,$valid_until){
 		$result['status'] = 'OK';
