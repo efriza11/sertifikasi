@@ -1,5 +1,5 @@
 <div class="container" align="center">
-  <img src="<?php echo base_url('assets/img/certit.png') ?>" alt="Snow" style="width:100%;">
+  <img src="<?php echo base_url('assets/img/certificate.png') ?>" alt="Snow" style="width:100%;">
   <div class="nama-sertifikasi"><h1 style="color:white!important;font-weight:bold;text-transform:uppercase;font-size:<?php if(strlen($title->nama_sertifikasi)<=17){echo "50px";}else{echo "40px";} ?>;"><?= $title->nama_sertifikasi; ?></h1></div>
   <div class="tanggal-jabatan"><p style="color:black;font-size:20px"><?= $title->tanggal_indo; ?></br>
                                     <?= $title->jabatan_certifier; ?></p></div>
