@@ -5259,14 +5259,14 @@ hr {
 /* Top right text */
 .nama-certifier {
   position: absolute;
-  bottom: 1%;
+  bottom: 1.8%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .nik-certifier {
   position: absolute;
-  top: 95.5%;
+  top: 94.8%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
