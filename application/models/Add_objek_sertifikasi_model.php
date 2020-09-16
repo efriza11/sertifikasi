@@ -52,4 +52,10 @@ public function submitObjekSertifikasi($sto,$nama_objek,$deskripsi_objek,$nama_f
 			    id_media = $name;");	
 	}
 
+	public function getSTO(){
+   		$query = "SELECT * FROM sto";
+   		$result = $this->db->query($query)->result();	
+   		return $result;
+	}
+
 }

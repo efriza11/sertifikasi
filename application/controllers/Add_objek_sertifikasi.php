@@ -16,10 +16,17 @@ class Add_objek_sertifikasi extends CI_Controller {
 	public function index(){
 		show_404();
 	}
-	
+
+
 	public function add_objek(){
+    $sto = $this->Add_objek_sertifikasi_model->getSTO();
+    $html ="<option value=''>STO</option>";
+    foreach ($sto as $row) {
+     $html .= "<option value='$row->id_sto'>$row->nama_sto</option>" ;
+    }
+    $data['sto'] = $html;
 		$this->load->view('common/v_header');
-		$this->load->view('v_add_objek_sertifikasi');
+		$this->load->view('v_add_objek_sertifikasi',$data);
 		$this->load->view('common/v_footer');
 	}
 

@@ -135,6 +135,7 @@
    $('#footer').show(); 
    $('#header_sertifikat').hide(); 
    $('#header_common').show(); 
+   $('#form_sto').html("<?= $sto; ?>");
 
 	$('#form_objek_sertifikasi').validator().on('submit', function (e) {
 		if (e.isDefaultPrevented()) {
