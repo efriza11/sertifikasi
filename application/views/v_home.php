@@ -85,8 +85,14 @@
 					<div class="row">
 						<div class="col-md-6">
 							<div class="form-group">
-							  <label>Nama Sertifikasi</label>
-							  <input type="text" class="form-control" name="form_nama_sertifikasi" id="form_nama_sertifikasi" placeholder="Nama Sertifikasi" required>
+							<label>Nama Sertifikasi</label>
+								<select name="form_nama_sertifikasi" id="form_nama_sertifikasi" class="form-control" required>
+									<option value="" selected >Nama Sertifikasi</option>
+									<option value ="FTM Sehat" >FTM SEHAT</option>
+									<option value ="R. Battere Sehat" >R. Battere Sehat</option>
+									<option value ="R. Genset Sehat" >R. Genset Sehat</option>
+									<option value ="R. Rectifier Sehat" >R. Rectifier Sehat</option>
+								</select>
 							</div>
 						</div>
 						<div class="col-md-6">
@@ -298,7 +304,7 @@
 	}
 
 	function open_certificate(id_objek){
-		console.log(id_objek)
+		//console.log(id_objek)
 		$('#id_objek_sertifikasi').val(id_objek);
 		table_jeniis_sertifikasi.ajax.reload();
 		$('#modal_jenis_sertifikasi').modal('show');

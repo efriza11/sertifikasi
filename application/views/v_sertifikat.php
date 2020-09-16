@@ -26,7 +26,7 @@
 								<h4>Tanggal : <?= $title->tanggal; ?></h4>
 							</div>
 							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-								<img align="right" src="<?php echo base_url()?>assets/img/sertif.jpg" style="height: 120px;">
+								<img align="right" src="<?php echo base_url()?>assets/img/sertifikat/<?= $title->nama_sertifikasi; ?>.png" style="height: 120px;">
 							</div>
 
 
