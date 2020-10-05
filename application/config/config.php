@@ -327,7 +327,7 @@ $config['cache_query_string'] = FALSE;
 | https://codeigniter.com/user_guide/libraries/encryption.html
 |
 */
-$config['encryption_key'] = 'arnet-app';
+$config['encryption_key'] = 'sertifikasi-app';
 
 /*
 |--------------------------------------------------------------------------
@@ -381,7 +381,7 @@ $config['encryption_key'] = 'arnet-app';
 |
 */
 $config['sess_driver'] = 'files';
-$config['sess_cookie_name'] = 'arnet_session';
+$config['sess_cookie_name'] = 'ser_session';
 $config['sess_expiration'] = 7200;
 $config['sess_save_path'] = NULL;
 $config['sess_match_ip'] = FALSE;
