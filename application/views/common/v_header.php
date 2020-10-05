@@ -469,31 +469,4 @@
       </div>
       <!-- /.container-fluid -->
     </nav>
-
-    <nav id="header_sertifikat" class="navbar-light navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header" >
-          <a class="navbar-brand"><img src="<?php echo base_url('assets/img/GREAT BANUA.png') ?>" class="img-fluid mb-4" alt="" height="35px" ></a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
-        </div>
-        <!-- /.navbar-collapse -->
-        <!-- Navbar Right Menu -->
-        <div class="navbar-custom-menu">
-          <ul class="nav navbar-nav">
-            
-            <!-- User Account Menu -->
-            <li class="dropdown user user-menu">
-              <!-- Menu Toggle Button -->
-              <a style="font-size: 30px; font-weight: bold;">Sertifikasi</a>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <!-- /.navbar-custom-menu -->
-      </div>
-      <!-- /.container-fluid -->
-    </nav>
   </header>

@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Sertifikasi - Login</title>
+	<title>ARNET - Login</title>
 	<link rel="icon" href="<?php echo base_url()?>assets/img/favicon.png" type="image/gif" sizes="32x32"> 
 	<!-- Tell the browser to be responsive to screen width -->
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -242,7 +242,7 @@
 	
 	<div class="login-box">
 		<div class="login-logo">
-			<b>Sertifikasi</b>
+			<b>ARNET</b>
 		</div>
 		<div class="login-box-body">
 		
