@@ -107,12 +107,12 @@
 										</div>
 										
 									</div>
-									<div class="col-md-12">
-										<div id="media_table">
-										</div>
-									</div>
 								</div>
 								<div class="row" id="media">
+								</div>
+								<div class="col-md-12">
+										<div id="media_table">
+										</div>
 								</div>
 							</div>
 						</div>
