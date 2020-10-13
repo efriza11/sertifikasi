@@ -57,6 +57,10 @@ class Home_model extends CI_Model {
 	 	if($this->db->query($query)->num_rows()==0){
 			$sql = "DELETE FROM objek_sertifikasi WHERE id_objek = '$id_objek'";
 			$this->db->query($sql);
+			$sql = "DELETE FROM media WHERE id_objek = '$id_objek'";
+			$this->db->query($sql);
+			$sql = "DELETE FROM field_objek_sertifikasi WHERE id_objek = '$id_objek'";
+			$this->db->query($sql);
 			$result['status'] = 'OK';
 			$result['message'] = 'Berhasil Dihapus';	
 		}else{

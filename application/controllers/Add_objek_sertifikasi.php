@@ -24,11 +24,77 @@ class Add_objek_sertifikasi extends CI_Controller {
     foreach ($sto as $row) {
      $html .= "<option value='$row->id_sto'>$row->nama_sto</option>" ;
     }
+    $data['media']="";
+    $data['field']=["",""];
+    $data['deskripsi']="";
+    $data['nama_objek']="";
+    $data['id_sto']="";
     $data['sto'] = $html;
+    $data['action'] = "add";
+    $data['id_objek'] = '';
 		$this->load->view('common/v_header');
 		$this->load->view('v_add_objek_sertifikasi',$data);
 		$this->load->view('common/v_footer');
 	}
+
+  public function edit_objek($id_objek){
+    $sto = $this->Add_objek_sertifikasi_model->getSTO();
+    $html ="<option value=''>STO</option>";
+    foreach ($sto as $row) {
+     $html .= "<option value='$row->id_sto'>$row->nama_sto</option>" ;
+    }
+    $objek = $this->Add_objek_sertifikasi_model->getObjekSertifikasi($id_objek);
+    $data['media']=$this->table_media($id_objek);
+    $data['field']=$this->table_field($id_objek);
+    $data['deskripsi']=$objek->deskripsi;
+    $data['nama_objek']=$objek->nama_objek_sertifikasi;
+    $data['id_sto']=$objek->id_sto;
+    $data['sto'] = $html;
+    $data['action'] = "edit";
+    $data['id_objek'] = $id_objek;
+    $this->load->view('common/v_header');
+    $this->load->view('v_add_objek_sertifikasi',$data);
+    $this->load->view('common/v_footer');
+  }
+
+  function table_media($id_objek){
+    $data = $this->Add_objek_sertifikasi_model->getMedia($id_objek);
+    $string = '<table id="table_media" class="table table-bordered"><tr><td align="center"><b>#</b></td><td align="center"><b>Deskripsi</b></td><td align="center"><b>Tipe</b></td><td align="center"><b>Action</b></td></tr>';
+    $i=1;
+    foreach ($data as $row) {
+      if($row->tipe_media=="PHOTO"){
+        $string .= '<tr><td align="center">'.$i.'</td><td align="center">'.$row->deskripsi_media.'</td><td align="center">'.$row->tipe_media.'</td><td align="center"><a class="btn btn-primary btn-xs" href="'.base_url('assets/photo_upload/'.$row->url).'" target="_blank"> <i class="fa fa-fw fa-eye"> </i> </a> <a class="btn btn-danger btn-xs" onclick="delete_media('.$row->id_media.','.$row->id_objek.')"><i class="fa fa-fw fa-trash"> </i> </a></td></tr>';  
+      }else{
+        $string .= '<tr><td align="center">'.$i.'</td><td align="center">'.$row->deskripsi_media.'</td><td align="center">'.$row->tipe_media.'</td><td align="center"><a class="btn btn-primary btn-xs"href="'.base_url('assets/video_upload/'.$row->url).'" target="_blank"> <i class="fa fa-fw fa-eye"> </i> </a> <a class="btn btn-danger btn-xs" onclick="delete_media('.$row->id_media.','.$row->id_objek.')"><i class="fa fa-fw fa-trash"> </i> </a> </td></tr>';
+      }
+      
+      $i++;
+
+    }
+
+    $string .= '</table>';
+    
+    return $string;
+  }
+
+  function table_field($id_objek){
+    $data = $this->Add_objek_sertifikasi_model->getField($id_objek);
+    $i=1;
+    $counter=0;
+    $string='';
+    
+    foreach ($data as $row) {
+      $string.='<div class="col-md-6"><div class="form-group"><label>Nama Field</label><input type="text" class="form-control" name="form_nama_field_'.$i.'" id="form_nama_field_'.$i.'" value="'.$row->nama_field.'" required></div></div><div class="col-md-6"><div class="form-group"><label>Isi Field</label><input type="text" class="form-control" name="form_isi_field_'.$i.'" id="form_isi_field_'.$i.'" value="'.$row->isi_field.'"  required></div></div>';
+      
+      $i++;
+      $counter++;
+
+    }
+
+    return array($string,$counter);
+  }
+
+  
 
 
     public function submitObjekSertifikasi(){
@@ -47,14 +113,41 @@ class Add_objek_sertifikasi extends CI_Controller {
 
         $result = $this->Add_objek_sertifikasi_model->submitObjekSertifikasi($sto,$nama_objek,$deskripsi_objek,$nama_fields,$isi_fields,$deskripsi_media);
         if($result['status']=='OK'){
-          $this->upload($result['name']);  
+          $this->upload($result['name'],'add');  
         }
         return ($result);
     }
 
-    public function upload($name){
+    public function updateObjekSertifikasi(){
+        $sto = $this->input->post('form_sto');
+        $nama_objek = $this->input->post('form_nama_objek');        
+        $deskripsi_objek = $this->input->post('form_deskripsi_objek');               
+        $nama_fields = $this->input->post('nama_fields');               
+        $isi_fields = $this->input->post('isi_fields');    
+        $deskripsi_media = $this->input->post('deskripsi_media');    
+        $id_objek = $this->input->post('id_objek');    
+
+        /*$deskripsi_media = [];
+        for ($i=1; $i <= $jumlah_media ; $i++) { 
+             array_push($deskripsi_media,$this->input->post('form_deskripsi_media_'.$i));
+         } */
+              
+        $result = $this->Add_objek_sertifikasi_model->updateObjekSertifikasi($sto,$nama_objek,$deskripsi_objek,$nama_fields,$isi_fields,$deskripsi_media,$id_objek);
+        if($result['status']=='OK'){
+          $this->upload($result['name'],'edit');  
+        }
+        return ($result);
+    }
+
+    public function upload($name,$action){
         $i = 1;
         foreach ($name as $key) {
+            if($action=="add"){
+              $result['message'] = 'Objek Sertifikasi Berhasil Ditambahkan';  
+            }else{
+              $result['message'] = 'Objek Sertifikasi Berhasil Diupdate';  
+            }
+            $result['status'] = 'OK';
             $file = $_FILES['form_media_'.(string)$i];
             $filename = $key;
             $fileType = strtolower(pathinfo($file["name"],PATHINFO_EXTENSION));
@@ -69,7 +162,11 @@ class Add_objek_sertifikasi extends CI_Controller {
                         }
                         if (move_uploaded_file($file["tmp_name"], $target_file)) {
                             $this->Add_objek_sertifikasi_model->addMediaURL($filename,$fileType,'VIDEO');
-                            $result['message'] = 'Objek Sertifikasi Berhasil Ditambahkan';
+                            if($action=="add"){
+                              $result['message'] = 'Objek Sertifikasi Berhasil Ditambahkan';  
+                            }else{
+                              $result['message'] = 'Objek Sertifikasi Berhasil Diupdate';  
+                            }
                             $result['status'] = 'OK';
                         } else {
                             $result['message'] = 'Sorry, there was an error uploading your file.';
@@ -87,7 +184,11 @@ class Add_objek_sertifikasi extends CI_Controller {
                       }
                       if (move_uploaded_file($file["tmp_name"], $target_file)) {
                         $this->Add_objek_sertifikasi_model->addMediaURL($filename,$fileType,'PHOTO');
-                        $result['message'] = 'Objek Sertifikasi Berhasil Ditambahkan';
+                        if($action=="add"){
+                          $result['message'] = 'Objek Sertifikasi Berhasil Ditambahkan';  
+                        }else{
+                          $result['message'] = 'Objek Sertifikasi Berhasil Diupdate';  
+                        }
                         $result['status'] = 'OK';
                       } else {
                         $result['message'] = 'Sorry, there was an error uploading your file.';
@@ -102,32 +203,6 @@ class Add_objek_sertifikasi extends CI_Controller {
                   $result['message'] = 'File empty.';
                   $result['status'] = 'error';
                 }
-              }else{
-                if($file['error'] == UPLOAD_ERR_INI_SIZE){
-                  $result['message'] = 'The uploaded file exceeds the upload_max_filesize directive in php.ini';
-                  $result['status'] = 'error';
-                }else if($file['error'] == UPLOAD_ERR_FORM_SIZE){
-                  $result['message'] = 'The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in the HTML form';
-                  $result['status'] = 'error';
-                }else if($file['error'] == UPLOAD_ERR_PARTIAL){
-                  $result['message'] = 'The uploaded file was only partially uploaded';
-                  $result['status'] = 'error';
-                }else if($file['error'] == UPLOAD_ERR_NO_FILE){
-                  $result['message'] = 'No file was uploaded';
-                  $result['status'] = 'error';
-                }else if($file['error'] == UPLOAD_ERR_NO_TMP_DIR){
-                  $result['message'] = 'Missing a temporary folder';
-                  $result['status'] = 'error';
-                }else if($file['error'] == UPLOAD_ERR_CANT_WRITE){
-                  $result['message'] = 'Failed to write file to disk';
-                  $result['status'] = 'error';
-                }else if($file['error'] == UPLOAD_ERR_EXTENSION){
-                    $result['status'] = 'error';
-                    $result['message'] = 'File upload stopped by extension';
-                }else{
-                  $result['status'] = 'error';
-                  $result['message'] = 'Unknown upload error';
-                }
               }
 
             $i++;
@@ -136,4 +211,11 @@ class Add_objek_sertifikasi extends CI_Controller {
         echo json_encode($result);
     }
 
+    public function deleteMedia(){
+      $id_media = $this->input->post('id_media');
+      $id_objek = $this->input->post('id_objek');
+      $result = $this->Add_objek_sertifikasi_model->deleteMedia($id_media);
+      $result['media']=$this->table_media($id_objek);
+      echo json_encode($result);
+    }
 }

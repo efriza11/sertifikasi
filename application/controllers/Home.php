@@ -31,7 +31,9 @@ class Home extends CI_Controller {
 		$i=1;
 		foreach($data as $row){
 			$row->no = $start + $i;
-			$row->action = '<a class="btn btn-primary btn-xs" onclick="open_certificate(\''.$row->id_objek.'\')">Lihat Sertifikasi</a> <a class="btn btn-danger btn-xs" onclick="delete_objek(\''.$row->id_objek.'\')"><i class="fa fa-fw fa-trash"></i></a>';
+			$row->action = '<a class="btn btn-primary btn-xs" onclick="open_certificate(\''.$row->id_objek.'\')">Lihat Sertifikasi</a> 
+				<a class="btn btn-danger btn-xs" onclick="delete_objek(\''.$row->id_objek.'\')"><i class="fa fa-fw fa-trash"> </i> </a>
+				<a class="btn btn-warning btn-xs" onclick="edit_objek(\''.$row->id_objek.'\')"> <i class="fa fa-fw fa-edit"> </i> </a> ';
 			$i++;
 		}
 		

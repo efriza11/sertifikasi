@@ -443,4 +443,10 @@
 			}
 		});
 	}
+
+
+	function edit_objek(id_objek){
+		//console.log(counter)
+		window.location.href = "<?php echo base_url();?>add_objek_sertifikasi/edit_objek/"+id_objek;
+	}
 </script>

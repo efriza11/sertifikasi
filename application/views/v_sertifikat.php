@@ -59,9 +59,7 @@
 													<div class="core-slider_item">
 														<figure>
 															<div class="embed-responsive embed-responsive-16by9">
-																<video class="embed-responsive-item" controls>
-																	<source src="<?php echo base_url()?>assets/video_upload/<?=$row->url?>" type="video/mp4">
-																</video>
+																<iframe src="<?php echo base_url()?>assets/video_upload/<?=$row->url?>" allow=""></iframe>
 															</div>
 															<figcaption><?= $row->deskripsi_media ?></figcaption>
 														</figure>
